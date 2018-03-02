@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_inbox" android:icon="@drawable/inbox"
+            android:title="Inbox" />
+        <item android:id="@+id/nav_queue" android:icon="@drawable/queueicon"
+            android:title="Queue" />
+        <item android:id="@+id/nav_sent" android:icon="@drawable/sendicon"
+            android:title="Sent" />
+        <item android:id="@+id/nav_setting" android:icon="@drawable/settings"
+            android:title="Settings" />
+
+        <item android:title="Folders" android:id="@+id/folder_group">
+            <menu>
+                <group android:checkableBehavior="single" android:id="@+id/menu_folder">
+
+                </group>
+            </menu>
+        </item>
+
+        <item android:id="@+id/nav_add_folder" android:icon="@drawable/createfolder"
+            android:title="Add Folder" />
+
+        <item android:title="Labels" android:id="@+id/subfolder_group">
+            <menu>
+                <group android:checkableBehavior="single" android:id="@+id/menu_subfolder">
+
+                </group>
+            </menu>
+        </item>
+
+        <item android:id="@+id/nav_add_label" android:icon="@drawable/createfolder"
+            android:title="Add Label" />
+    </group>
+</menu>
